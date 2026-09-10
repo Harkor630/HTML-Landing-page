@@ -5,23 +5,29 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7f7;
-    color: #1f2929;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #263238;
 }
 
 header {
-    height: 70px;
-    background: white;
+    background-color: #173f5f;
+    color: white;
+    height: 75px;
+    padding: 0 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7%;
-    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 header h2 {
-    color: #087979;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 nav {
@@ -31,96 +37,149 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
-    color: #444;
-}
-
-button {
-    border: none;
-    padding: 12px 22px;
-    background: #087979;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
-.hero {
-    min-height: 430px;
+nav a:hover {
+    color: #4ecdc4;
+}
+
+nav a:last-child {
+    background-color: #20639b;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+nav a:last-child:hover {
+    background-color: #173f5f;
+    color: white;
+}
+.tilin {
+    min-height: 560px;
+    padding: 80px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    padding: 70px 7%;
-    background: #f8fbfb;
+    gap: 60px;
+    background: linear-gradient(135deg, #173f5f 0%, #20639b 55%, #3caea3 100%);
+    color: white;
 }
 
-.hero-text {
+.tilin-texto {
+    max-width: 560px;
+}
+
+.tilin h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.tilin p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #e8f1f2;
+}
+
+.tilin a {
+    display: inline-block;
+    background-color: #3caea3;
+    color: white;
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.tilin a:hover {
+    background-color: #32958b;
+}
+
+.tilin-imagen {
+    width: 45%;
     max-width: 550px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 25px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.hero-image {
-    width: 50%;
-}
-
-.hero-image img {
+.tilin-imagen img {
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
 }
 
-.services {
-    padding: 70px 7%;
+.tilin-imagen img:hover {
+    transform: scale(1.02);
+}
+
+.servicios {
+    padding: 90px 8%;
+    background-color: #ffffff;
+}
+
+.servicios h2 {
     text-align: center;
+    font-size: 38px;
+    color: #173f5f;
+    margin-bottom: 55px;
+    font-weight: 800;
 }
 
-.services h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #087979;
-}
-
-.cards {
+.tarjetas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
-.card {
-    background: white;
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 16px;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid #e2e8e8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
 }
 
-.card img {
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(23, 63, 95, 0.18);
+    border-color: #3caea3;
+}
+
+.tarjeta img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
+    display: block;
 }
 
-.card h3 {
-    margin: 20px 10px 10px;
+.tarjeta h3 {
+    color: #173f5f;
+    font-size: 20px;
+    margin: 22px 20px 10px;
 }
 
-.card p {
-    color: #666;
-    padding: 0 15px 25px;
+.tarjeta p {
+    color: #607d8b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 20px 25px;
 }
 
 footer {
+    background-color: #102a43;
+    color: #b8c7d1;
     text-align: center;
-    padding: 30px;
-    background: #087979;
-    color: white;
+    padding: 25px;
+    font-size: 14px;
 }
