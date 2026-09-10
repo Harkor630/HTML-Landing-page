@@ -183,3 +183,65 @@ footer {
     padding: 25px;
     font-size: 14px;
 }
+
+@media (max-width: 900px) {
+    .tilin {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tilin-texto {
+        max-width: 700px;
+    }
+
+    .tilin-imagen {
+        width: 100%;
+    }
+
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tilin {
+        padding: 55px 20px;
+    }
+
+    .tilin h1 {
+        font-size: 36px;
+    }
+
+    .tilin p {
+        font-size: 16px;
+    }
+
+    .tilin-imagen img {
+        height: 230px;
+    }
+
+    .servicios {
+        padding: 55px 20px;
+    }
+
+    .servicios h2 {
+        font-size: 28px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
